@@ -1,5 +1,6 @@
 ﻿namespace PDBPractical1.StrategyViaDelegates;
 
+// Статический класс для методов расширения двумерного массива.
 public static class ArraySorter
 {
     public static int[,] SortRows(this int[,] array, 
@@ -37,6 +38,7 @@ public static class ArraySorter
         return result;
     }
 
+    // Метод для вывода массива в консоль.
     public static void Print(this int[,] array)
     {
         for (int i = 0; i < array.GetLength(0); i++)
